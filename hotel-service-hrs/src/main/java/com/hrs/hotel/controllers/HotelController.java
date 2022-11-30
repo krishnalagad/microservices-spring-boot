@@ -34,6 +34,7 @@ public class HotelController {
 		return ResponseEntity.status(HttpStatus.OK).body(hotel);
 	}
 	
+	@GetMapping
 	public ResponseEntity<List<Hotel>> getAll(){
 		List<Hotel> allHotels = this.hotelService.getAllHotels();
 		return ResponseEntity.status(HttpStatus.OK).body(allHotels);
