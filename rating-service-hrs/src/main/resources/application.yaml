@@ -1,5 +1,19 @@
+server:
+  port: 8083
+  
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017
+      host: localhost
+      port: 27017
       database: microservices
+
+#  
+#spring:
+#  data:
+#    mongodb:
+#      authentication-database: admin
+#      username: root
+#      password: krishna24
+#      uri: mongodb://localhost:27017
+#      database: microservices
